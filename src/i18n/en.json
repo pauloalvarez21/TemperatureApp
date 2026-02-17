@@ -1,0 +1,381 @@
+{
+  "home": "Home",
+  "conversion": "Conversion",
+  "explanation": "Explanation",
+  "app_title": "Temperature App",
+  "temperatureScales": [
+    {
+      "id": 1,
+      "name": "Kelvin",
+      "symbol": "K",
+      "color": "#9C27B0",
+      "description": "The Kelvin scale is a thermodynamic (absolute) temperature scale where absolute zero, the lowest possible temperature, is defined as 0 K.",
+      "inventor": "Lord Kelvin (William Thomson)",
+      "year": "1848",
+      "keyPoints": [
+        "Does not use degrees, only kelvins (K)",
+        "0 K = -273.15°C (absolute zero)",
+        "The triple point of water is 273.16 K",
+        "Used in science and engineering",
+        "Increments of 1 K equal increments of 1°C"
+      ],
+      "formula": "K = °C + 273.15",
+      "usage": "Science, astronomy, physics"
+    },
+    {
+      "id": 2,
+      "name": "Degree Celsius",
+      "symbol": "°C",
+      "color": "#2196F3",
+      "description": "The Celsius scale, formerly known as the centigrade scale, is based on the freezing point (0°C) and boiling point (100°C) of water at 1 atmosphere of pressure.",
+      "inventor": "Anders Celsius",
+      "year": "1742",
+      "keyPoints": [
+        "Originally 0°C was the boiling point",
+        "Later inverted by Carl Linnaeus",
+        "Used in most of the world",
+        "Part of the metric system",
+        "Human body temperature: 37°C"
+      ],
+      "formula": "°C = (K - 273.15) = (°F - 32) × 5/9",
+      "usage": "Worldwide daily use (except the U.S.)"
+    },
+    {
+      "id": 3,
+      "name": "Degree Fahrenheit",
+      "symbol": "°F",
+      "color": "#FF9800",
+      "description": "Developed by Daniel Fahrenheit, this scale uses as reference a mixture of ice, water, and ammonium salt (0°F) and human body temperature (originally 96°F, now 98.6°F).",
+      "inventor": "Daniel Gabriel Fahrenheit",
+      "year": "1724",
+      "keyPoints": [
+        "0°F = freezing point of a saline mixture",
+        "32°F = freezing point of water",
+        "212°F = boiling point of water",
+        "98.6°F = average human body temperature",
+        "Higher resolution than Celsius"
+      ],
+      "formula": "°F = (°C × 9/5) + 32",
+      "usage": "United States, Bahamas, Cayman Islands"
+    },
+    {
+      "id": 4,
+      "name": "Rankine",
+      "symbol": "°R",
+      "color": "#4CAF50",
+      "description": "The Rankine scale is an absolute temperature scale based on the Fahrenheit scale. It is the Fahrenheit equivalent of the Kelvin scale.",
+      "inventor": "William John Macquorn Rankine",
+      "year": "1859",
+      "keyPoints": [
+        "Absolute scale like Kelvin",
+        "0°R = 0 K = absolute zero",
+        "491.67°R = 32°F (water freezes)",
+        "671.67°R = 212°F (water boils)",
+        "Uses Fahrenheit-sized increments"
+      ],
+      "formula": "°R = °F + 459.67",
+      "usage": "Thermodynamic engineering in the U.S."
+    },
+    {
+      "id": 5,
+      "name": "Degree Réaumur",
+      "symbol": "°Ré",
+      "color": "#795548",
+      "description": "Developed by René Antoine Ferchault de Réaumur, this historical scale uses the freezing point of water as 0°Ré and the boiling point as 80°Ré.",
+      "inventor": "René Antoine Ferchault de Réaumur",
+      "year": "1731",
+      "keyPoints": [
+        "0°Ré = freezing point of water",
+        "80°Ré = boiling point of water",
+        "Widely used in Europe",
+        "Popular in France and Germany",
+        "Easy division into quarters and eighths"
+      ],
+      "formula": "°Ré = °C × 4/5",
+      "usage": "Historical Europe (mainly France)"
+    },
+    {
+      "id": 6,
+      "name": "Degree Rømer",
+      "symbol": "°Rø",
+      "color": "#607D8B",
+      "description": "One of the earliest modern temperature scales, developed by Danish astronomer Ole Christensen Rømer. It used a mixture of ice and salt as 0°Rø and boiling water as 60°Rø.",
+      "inventor": "Ole Christensen Rømer",
+      "year": "1701",
+      "keyPoints": [
+        "7.5°Rø = freezing point of water",
+        "60°Rø = boiling point of water",
+        "0°Rø = freezing point of brine",
+        "Basis for the Fahrenheit scale",
+        "Mainly used in Denmark"
+      ],
+      "formula": "°Rø = °C × 21/40 + 7.5",
+      "usage": "Historically in Denmark"
+    },
+    {
+      "id": 7,
+      "name": "Degree Newton",
+      "symbol": "°N",
+      "color": "#FF5722",
+      "description": "Developed by Isaac Newton for his thermal experiments. Newton was a pioneer in the systematic study of temperature.",
+      "inventor": "Isaac Newton",
+      "year": "1701",
+      "keyPoints": [
+        "0°N = freezing point of water",
+        "33°N = boiling point of water",
+        "Newton invented the thermometer",
+        "Based on linseed oil",
+        "First scale with fixed points"
+      ],
+      "formula": "°N = °C × 33/100",
+      "usage": "Experimental, historical"
+    },
+    {
+      "id": 8,
+      "name": "Degree Delisle",
+      "symbol": "°De",
+      "color": "#F44336",
+      "description": "An inverse scale created by French astronomer Joseph-Nicolas Delisle. It is unique because values decrease as temperature increases.",
+      "inventor": "Joseph-Nicolas Delisle",
+      "year": "1732",
+      "keyPoints": [
+        "0°De = boiling point of water",
+        "150°De = freezing point of water",
+        "Inverse scale (decreases when heating)",
+        "Popular in Russia for 100 years",
+        "Extremely precise"
+      ],
+      "formula": "°De = (100 - °C) × 3/2",
+      "usage": "Historically in Russia (18th century)"
+    }
+  ],
+
+  "historicalEvents": [
+    {
+      "year": "1593",
+      "event": "Galileo Galilei invents the thermoscope, precursor of the thermometer."
+    },
+    {
+      "year": "1612",
+      "event": "Santorio Santorio adds a numerical scale to the thermoscope."
+    },
+    {
+      "year": "1701",
+      "event": "Ole Rømer creates the first modern temperature scale."
+    },
+    {
+      "year": "1724",
+      "event": "Daniel Fahrenheit develops the mercury Fahrenheit scale."
+    },
+    {
+      "year": "1742",
+      "event": "Anders Celsius proposes the centigrade scale (later inverted)."
+    },
+    {
+      "year": "1848",
+      "event": "Lord Kelvin establishes the absolute temperature scale."
+    }
+  ],
+
+  "commonTemperatures": [
+    {
+      "name": "Absolute Zero",
+      "celsius": -273.15,
+      "description": "Lowest possible temperature"
+    },
+    {
+      "name": "Water Freezing",
+      "celsius": 0,
+      "description": "Freezing point of water"
+    },
+    {
+      "name": "Room Temperature",
+      "celsius": 20,
+      "description": "Typical ambient temperature"
+    },
+    {
+      "name": "Body Temperature",
+      "celsius": 37,
+      "description": "Human body temperature"
+    },
+    {
+      "name": "Water Boiling",
+      "celsius": 100,
+      "description": "Boiling point of water"
+    }
+  ],
+
+  "curiosities": [
+    {
+      "icon": "❄️",
+      "text": "The original Celsius scale was inverted: 0° for boiling and 100° for freezing."
+    },
+    {
+      "icon": "🎯",
+      "text": "Fahrenheit based his scale on three points: saline mixture (0°F), ice-water (32°F), and body temperature (96°F)."
+    },
+    {
+      "icon": "⚖️",
+      "text": "Kelvin is the only scale that does not use the term 'degrees', only 'kelvins'."
+    },
+    {
+      "icon": "🌎",
+      "text": "Only three countries use Fahrenheit as their main scale: the U.S., Bahamas, and Cayman Islands."
+    },
+    {
+      "icon": "📏",
+      "text": "Delisle is the only scale where temperature decreases as it gets hotter."
+    }
+  ],
+
+  "introText": {
+    "title": "What is a temperature scale?",
+    "description": "A temperature scale is a system used to measure temperature quantitatively. It assigns numbers to different levels of heat or cold.",
+    "points": [
+      "Fixed points: Reference temperatures such as water freezing/boiling",
+      "Increments: How the interval between fixed points is divided",
+      "Zero: The point where the scale begins (relative or absolute)"
+    ]
+  },
+
+  "finalNote": {
+    "title": "Why so many scales?",
+    "text": "Each scale was developed in different historical and scientific contexts. Some aimed for greater precision, others for ease of use, and others were based on available materials (such as mercury vs alcohol). Today, Celsius and Kelvin dominate science, while Fahrenheit persists by tradition in some countries."
+  },
+  "homeScreen": {
+    "title": "Temperature Converter",
+    "subtitle": "A complete tool to convert between 8 temperature scales",
+    "description": "Developed for students, engineers, and professionals who need precision in thermal calculations.",
+
+    "actions": {
+      "convert": {
+        "title": "Convert",
+        "subtitle": "Go to converter"
+      },
+      "learn": {
+        "title": "Learn",
+        "subtitle": "View scales"
+      }
+    },
+
+    "features": {
+      "title": "Main Features",
+      "items": {
+        "scales": {
+          "title": "8 Scales",
+          "description": "Kelvin, Celsius, Fahrenheit, Rankine, Réaumur, Rømer, Newton and Delisle"
+        },
+        "fast": {
+          "title": "Fast Conversion",
+          "description": "Instant conversions between all scales"
+        },
+        "compare": {
+          "title": "Comparison",
+          "description": "Comparison tables and common values"
+        },
+        "precision": {
+          "title": "Precision",
+          "description": "Up to 4 decimal places"
+        }
+      }
+    },
+
+    "temps": {
+      "title": "Highlighted Temperatures",
+      "freeze": "Water freezes",
+      "boil": "Water boils",
+      "body": "Human body",
+      "absoluteZero": "Absolute zero"
+    },
+
+    "cta": {
+      "title": "Ready to start?",
+      "description": "Explore all the features of our advanced temperature converter",
+      "button": "Start Converting →"
+    },
+
+    "footer": {
+      "rights": "© 2026 Gaelectronica - All rights reserved",
+      "tool": "Temperature conversion tool"
+    }
+  },
+  "conversionScreen": {
+    "title": "Temperature Converter",
+    "subtitle": "Convert between 8 different scales",
+    "valueToConvert": "Value to convert",
+    "placeholder": "Enter temperature",
+    "from": "From",
+    "to": "To",
+    "swap": "Swap",
+    "result": "Result",
+    "decimals": "Decimals",
+    "reset": "Reset",
+    "errors": {
+      "invalid": "Invalid value"
+    }
+  },
+  "explanationScreen": {
+    "title": "Temperature Scales",
+    "subtitle": "Complete guide to the {{count}} main scales",
+    "intro": "From historical scales to modern absolute scales used in science.",
+    "sectionScales": "The {{count}} Temperature Scales",
+    "keyPoints": "Key points",
+    "formula": "Main formula",
+    "usage": "Historical / current usage",
+    "curiosities": "Interesting Facts",
+    "comparison": {
+      "title": "Scale Comparison",
+      "subtitle": "Equivalent values for common temperatures",
+      "temperature": "Temperature"
+    },
+    "table": {
+      "showFull": "Show full table",
+      "showLess": "Show less",
+      "moreItems": "... and {{count}} more temperatures",
+      "scrollInstruction": "Scroll horizontally to see all scales"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "conversion": "Conversion",
+    "explanation": "Information"
+  },
+  "errors": {
+    "invalidNumber": "Please enter a valid number",
+    "conversionError": "Conversion error"
+  },
+  "scales": {
+    "kelvin": {
+      "name": "Kelvin",
+      "description": "Absolute scale of temperature"
+    },
+    "celsius": {
+      "name": "Degree Celsius",
+      "description": "Scale based on freezing and boiling points of water"
+    },
+    "fahrenheit": {
+      "name": "Degree Fahrenheit",
+      "description": "Used mainly in the US, it defines the freezing point of water at 32°F and the boiling point at 212°F."
+    },
+    "rankine": {
+      "name": "Degree Rankine",
+      "description": "Absolute thermodynamic scale, where 0°R is absolute zero. Related to Fahrenheit."
+    },
+    "reaumur": {
+      "name": "Degree Réaumur",
+      "description": "Scale where water freezes at 0°Ré and boils at 80°Ré."
+    },
+    "romer": {
+      "name": "Degree Rømer",
+      "description": "Historical scale that defines the freezing point of water at 7.5°Rø."
+    },
+    "newton": {
+      "name": "Degree Newton",
+      "description": "Scale that defines the freezing point of water at 0°N and the boiling point at 33°N."
+    },
+    "delisle": {
+      "name": "Degree Delisle",
+      "description": "Inverse scale where water boils at 0°De and freezes at 150°De."
+    }
+  }
+}

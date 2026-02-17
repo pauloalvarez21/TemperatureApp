@@ -1,4 +1,8 @@
 {
   "name": "TemperatureApp",
-  "displayName": "TemperatureApp"
+  "displayName": "TemperatureApp",
+   "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-2899284558865652~8101456413",
+    "ios_app_id": "ca-app-pub-2899284558865652~8101456413"
+  }
 }

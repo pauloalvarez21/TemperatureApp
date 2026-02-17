@@ -13,7 +13,7 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
-//import { useTranslation } from 'react-i18next';
+import { t } from '../i18n';
 
 /**
  * Propiedades para el componente SplashScreen.
@@ -34,7 +34,6 @@ interface SplashScreenProps {
 const SplashScreen = ({ onFinish }: SplashScreenProps) => {
   const fadeAnim = useRef(new Animated.Value(0)).current;
   const scaleAnim = useRef(new Animated.Value(0.5)).current;
-  //const { t } = useTranslation();
 
   useEffect(() => {
     Animated.sequence([
@@ -78,7 +77,7 @@ const SplashScreen = ({ onFinish }: SplashScreenProps) => {
           style={styles.logo}
           resizeMode="contain"
         />
-        <Text style={styles.title}>{/* t('app.title') */}</Text>
+        <Text style={styles.title}>{t('app_title')}</Text>
       </Animated.View>
     </View>
   );

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Image, StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { t } from '../i18n';
 
 // Importamos las pantallas
 import HomeScreen from '../screens/HomeScreen';
@@ -24,7 +25,7 @@ export const AppNavigator = () => {
         name="Home" 
         component={HomeScreen} 
         options={{ 
-          tabBarLabel: 'Inicio',
+          tabBarLabel: t('home'),
           tabBarIcon: ({ color, size }) => (
             <Image 
               source={require('../assets/images/home.png')} 
@@ -37,7 +38,7 @@ export const AppNavigator = () => {
         name="Conversion" 
         component={ConversionScreen} 
         options={{ 
-          tabBarLabel: 'Conversión',
+          tabBarLabel: t('conversion'),
           tabBarIcon: ({ color, size }) => (
             <Image 
               source={require('../assets/images/temperature.png')} 
@@ -50,7 +51,7 @@ export const AppNavigator = () => {
         name="Explanation"
         component={ExplanationScreen} 
         options={{ 
-          tabBarLabel: 'Explicación',
+          tabBarLabel: t('explanation'),
           tabBarIcon: ({ color, size }) => (
             <Image 
               source={require('../assets/images/info.png')} 

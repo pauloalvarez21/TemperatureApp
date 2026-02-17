@@ -1,0 +1,376 @@
+{
+  "home": "Inicio",
+  "conversion": "Conversión",
+  "explanation": "Explicación",
+  "app_title": "App de Temperatura",
+  "temperatureScales": [
+    {
+      "id": 1,
+      "name": "Kelvin",
+      "symbol": "K",
+      "color": "#9C27B0",
+      "description": "La escala Kelvin es una escala de temperatura termodinámica (absoluta) donde el cero absoluto, la temperatura más baja posible, se define como 0 K.",
+      "inventor": "Lord Kelvin (William Thomson)",
+      "year": "1848",
+      "keyPoints": [
+        "No usa grados, solo Kelvins (K)",
+        "0 K = -273.15°C (cero absoluto)",
+        "El punto triple del agua es 273.16 K",
+        "Usada en ciencia e ingeniería",
+        "Incrementos de 1 K = incrementos de 1°C"
+      ],
+      "formula": "K = °C + 273.15",
+      "usage": "Ciencia, astronomía, física"
+    },
+    {
+      "id": 2,
+      "name": "Grado Celsius",
+      "symbol": "°C",
+      "color": "#2196F3",
+      "description": "La escala Celsius, anteriormente conocida como escala centígrada, está basada en los puntos de congelación (0°C) y ebullición (100°C) del agua a 1 atmósfera de presión.",
+      "inventor": "Anders Celsius",
+      "year": "1742",
+      "keyPoints": [
+        "Originalmente 0°C = punto de ebullición",
+        "Invertida por Carl Linnaeus",
+        "Usada en la mayoría del mundo",
+        "Sistema métrico internacional",
+        "Temperatura corporal: 37°C"
+      ],
+      "formula": "°C = (K - 273.15) = (°F - 32) × 5/9",
+      "usage": "Uso cotidiano mundial (excepto EE.UU.)"
+    },
+    {
+      "id": 3,
+      "name": "Grado Fahrenheit",
+      "symbol": "°F",
+      "color": "#FF9800",
+      "description": "Desarrollada por Daniel Fahrenheit, esta escala usa como referencia una mezcla de hielo, agua y sal de amonio (0°F) y la temperatura corporal humana (96°F originalmente, ahora 98.6°F).",
+      "inventor": "Daniel Gabriel Fahrenheit",
+      "year": "1724",
+      "keyPoints": [
+        "0°F = punto de congelación de mezcla salina",
+        "32°F = punto de congelación del agua",
+        "212°F = punto de ebullición del agua",
+        "98.6°F = temperatura corporal promedio",
+        "Mayor resolución que Celsius"
+      ],
+      "formula": "°F = (°C × 9/5) + 32",
+      "usage": "Estados Unidos, Bahamas, Islas Caimán"
+    },
+    {
+      "id": 4,
+      "name": "Rankine",
+      "symbol": "°R",
+      "color": "#4CAF50",
+      "description": "La escala Rankine es una escala de temperatura absoluta basada en la escala Fahrenheit. Es el equivalente Fahrenheit de la escala Kelvin.",
+      "inventor": "William John Macquorn Rankine",
+      "year": "1859",
+      "keyPoints": [
+        "Escala absoluta como Kelvin",
+        "0°R = 0 K = cero absoluto",
+        "491.67°R = 32°F (agua congela)",
+        "671.67°R = 212°F (agua hierve)",
+        "Incrementos iguales a Fahrenheit"
+      ],
+      "formula": "°R = °F + 459.67",
+      "usage": "Ingeniería termodinámica en EE.UU."
+    },
+    {
+      "id": 5,
+      "name": "Grado Réaumur",
+      "symbol": "°Ré",
+      "color": "#795548",
+      "description": "Desarrollada por René Antoine Ferchault de Réaumur, esta escala histórica usa el punto de congelación del agua como 0°Ré y el punto de ebullición como 80°Ré.",
+      "inventor": "René Antoine Ferchault de Réaumur",
+      "year": "1731",
+      "keyPoints": [
+        "0°Ré = punto de congelación del agua",
+        "80°Ré = punto de ebullición del agua",
+        "Usada extensamente en Europa",
+        "Popular en Francia y Alemania",
+        "Fácil división en cuartos y octavos"
+      ],
+      "formula": "°Ré = °C × 4/5",
+      "usage": "Europa histórica (principalmente Francia)"
+    },
+    {
+      "id": 6,
+      "name": "Grado Rømer",
+      "symbol": "°Rø",
+      "color": "#607D8B",
+      "description": "Una de las primeras escalas de temperatura modernas, desarrollada por el astrónomo danés Ole Christensen Rømer. Usaba una mezcla de hielo y sal como 0°Rø y el agua hirviendo como 60°Rø.",
+      "inventor": "Ole Christensen Rømer",
+      "year": "1701",
+      "keyPoints": [
+        "7.5°Rø = punto de congelación del agua",
+        "60°Rø = punto de ebullición del agua",
+        "0°Rø = punto de congelación de salmuera",
+        "Fue base para Fahrenheit",
+        "Usada principalmente en Dinamarca"
+      ],
+      "formula": "°Rø = °C × 21/40 + 7.5",
+      "usage": "Dinamarca históricamente"
+    },
+    {
+      "id": 7,
+      "name": "Grado Newton",
+      "symbol": "°N",
+      "color": "#FF5722",
+      "description": "Desarrollada por Isaac Newton para sus experimentos térmicos. Newton fue pionero en el estudio sistemático de la temperatura.",
+      "inventor": "Isaac Newton",
+      "year": "1701",
+      "keyPoints": [
+        "0°N = punto de congelación del agua",
+        "33°N = punto de ebullición del agua",
+        "Newton inventó el termómetro",
+        "Basada en aceite de linaza",
+        "Primera escala con puntos fijos"
+      ],
+      "formula": "°N = °C × 33/100",
+      "usage": "Experimental, histórica"
+    },
+    {
+      "id": 8,
+      "name": "Grado Delisle",
+      "symbol": "°De",
+      "color": "#F44336",
+      "description": "Una escala inversa creada por el astrónomo francés Joseph-Nicolas Delisle. Es única porque los valores disminuyen cuando la temperatura aumenta.",
+      "inventor": "Joseph-Nicolas Delisle",
+      "year": "1732",
+      "keyPoints": [
+        "0°De = punto de ebullición del agua",
+        "150°De = punto de congelación del agua",
+        "Escala inversa (baja al calentarse)",
+        "Popular en Rusia por 100 años",
+        "Extremadamente precisa"
+      ],
+      "formula": "°De = (100 - °C) × 3/2",
+      "usage": "Rusia históricamente (siglo XVIII)"
+    }
+  ],
+
+  "historicalEvents": [
+    {
+      "year": "1593",
+      "event": "Galileo Galilei inventa el termoscopio, precursor del termómetro."
+    },
+    {
+      "year": "1612",
+      "event": "Santorio Santorio agrega escala numérica al termoscopio."
+    },
+    {
+      "year": "1701",
+      "event": "Ole Rømer crea la primera escala de temperatura moderna."
+    },
+    {
+      "year": "1724",
+      "event": "Daniel Fahrenheit desarrolla la escala Fahrenheit con mercurio."
+    },
+    {
+      "year": "1742",
+      "event": "Anders Celsius propone la escala centígrada (invertida después)."
+    },
+    {
+      "year": "1848",
+      "event": "Lord Kelvin establece la escala absoluta de temperatura."
+    }
+  ],
+
+  "commonTemperatures": [
+    {
+      "name": "Cero Absoluto",
+      "celsius": -273.15,
+      "description": "Temperatura más baja posible"
+    },
+    {
+      "name": "Congelación Agua",
+      "celsius": 0,
+      "description": "Punto de congelación del agua"
+    },
+    {
+      "name": "Temperatura Ambiente",
+      "celsius": 20,
+      "description": "Temperatura ambiente típica"
+    },
+    {
+      "name": "Temperatura Corporal",
+      "celsius": 37,
+      "description": "Temperatura corporal humana"
+    },
+    {
+      "name": "Ebullición Agua",
+      "celsius": 100,
+      "description": "Punto de ebullición del agua"
+    }
+  ],
+
+  "curiosities": [
+    {
+      "icon": "❄️",
+      "text": "Celsius original estaba invertido: 0° para ebullición y 100° para congelación."
+    },
+    {
+      "icon": "🎯",
+      "text": "Fahrenheit basó su escala en tres puntos: mezcla salina (0°F), hielo-agua (32°F) y temperatura corporal (96°F)."
+    },
+    {
+      "icon": "⚖️",
+      "text": "Kelvin es la única escala que no usa el término 'grados', solo 'Kelvins'."
+    },
+    {
+      "icon": "🌎",
+      "text": "Solo 3 países usan Fahrenheit como escala principal: EE.UU., Bahamas e Islas Caimán."
+    },
+    {
+      "icon": "📏",
+      "text": "Delisle es la única escala donde la temperatura disminuye cuando hace más calor."
+    }
+  ],
+
+  "introText": {
+    "title": "¿Qué es una escala de temperatura?",
+    "description": "Una escala de temperatura es un sistema para medir la temperatura de forma cuantitativa. Consiste en asignar números a diferentes niveles de calor o frío.",
+    "points": [
+      "Puntos fijos: Temperaturas de referencia como congelación/ebullición del agua",
+      "Incrementos: Cómo se divide el intervalo entre puntos fijos",
+      "Cero: Punto donde la escala comienza (relativo o absoluto)"
+    ]
+  },
+
+  "finalNote": {
+    "title": "¿Por qué tantas escalas?",
+    "text": "Cada escala fue desarrollada en diferentes contextos históricos y científicos. Algunas buscaban mayor precisión, otras facilidad de uso, y otras se basaban en materiales disponibles (como mercurio vs alcohol). Hoy, Celsius y Kelvin dominan la ciencia, mientras Fahrenheit persiste por tradición en algunos países."
+  },
+  "homeScreen": {
+    "title": "Conversor de Temperatura",
+    "subtitle": "Una herramienta completa para conversión entre 8 escalas",
+    "description": "Desarrollada para estudiantes, ingenieros y profesionales.",
+    "actions": {
+      "convert": {
+        "title": "Convertir",
+        "subtitle": "Ir al conversor"
+      },
+      "learn": {
+        "title": "Aprender",
+        "subtitle": "Ver escalas"
+      }
+    },
+    "features": {
+      "title": "Características Principales",
+      "items": {
+        "scales": {
+          "title": "8 Escalas",
+          "description": "Kelvin, Celsius, Fahrenheit y más"
+        },
+        "fast": {
+          "title": "Conversión Rápida",
+          "description": "Conversiones instantáneas"
+        },
+        "compare": {
+          "title": "Comparativa",
+          "description": "Tablas y valores comunes"
+        },
+        "precision": {
+          "title": "Precisión",
+          "description": "Hasta 4 decimales"
+        }
+      }
+    },
+    "temps": {
+      "title": "Temperaturas Destacadas",
+      "freeze": "Agua congela",
+      "boil": "Agua hierve",
+      "body": "Cuerpo humano",
+      "absoluteZero": "Cero absoluto"
+    },
+    "cta": {
+      "title": "¿Listo para empezar?",
+      "description": "Explora todas las funcionalidades del conversor",
+      "button": "Comenzar a Convertir →"
+    },
+    "footer": {
+      "rights": "© 2026 Gaelectronica - Todos los derechos reservados",
+      "tool": "Herramienta para conversión de temperatura"
+    }
+  },
+  "conversionScreen": {
+    "title": "Conversor de Temperatura",
+    "subtitle": "Convierte entre 8 escalas diferentes",
+    "valueToConvert": "Valor a convertir",
+    "placeholder": "Ingresa la temperatura",
+    "from": "De",
+    "to": "A",
+    "swap": "Intercambiar",
+    "result": "Resultado",
+    "decimals": "Decimales",
+    "reset": "Reiniciar",
+    "errors": {
+      "invalid": "Valor inválido"
+    }
+  },
+  "explanationScreen": {
+    "title": "Escalas de Temperatura",
+    "subtitle": "Guía completa de las {{count}} escalas principales",
+    "intro": "Desde escalas históricas hasta escalas modernas usadas en ciencia.",
+    "sectionScales": "Las {{count}} Escalas de Temperatura",
+    "keyPoints": "Puntos clave",
+    "formula": "Fórmula principal",
+    "usage": "Uso histórico / actual",
+    "curiosities": "Curiosidades Interesantes",
+    "comparison": {
+      "title": "Comparativa de Escalas",
+      "subtitle": "Valores equivalentes para temperaturas comunes",
+      "temperature": "Temperatura"
+    },
+    "table": {
+      "showFull": "Mostrar tabla completa",
+      "showLess": "Mostrar menos",
+      "moreItems": "... y {{count}} temperaturas más",
+      "scrollInstruction": "Desliza horizontalmente para ver todas las escalas"
+    }
+  },
+  "navigation": {
+    "home": "Inicio",
+    "conversion": "Conversión",
+    "explanation": "Información"
+  },
+  "errors": {
+    "invalidNumber": "Por favor ingresa un número válido",
+    "conversionError": "Error en la conversión"
+  },
+  "scales": {
+    "kelvin": {
+      "name": "Kelvin",
+      "description": "Escala absoluta de temperatura"
+    },
+    "celsius": {
+      "name": "Grado Celsius",
+      "description": "Escala basada en puntos de congelación y ebullición del agua"
+    },
+    "fahrenheit": {
+      "name": "Grado Fahrenheit",
+      "description": "Usada principalmente en EE.UU., define el punto de congelación del agua en 32°F y el de ebullición en 212°F."
+    },
+    "rankine": {
+      "name": "Grado Rankine",
+      "description": "Escala termodinámica absoluta, donde 0°R es el cero absoluto. Relacionada con Fahrenheit."
+    },
+    "reaumur": {
+      "name": "Grado Réaumur",
+      "description": "Escala donde el agua se congela a 0°Ré y hierve a 80°Ré."
+    },
+    "romer": {
+      "name": "Grado Rømer",
+      "description": "Escala histórica que define el punto de congelación del agua en 7.5°Rø."
+    },
+    "newton": {
+      "name": "Grado Newton",
+      "description": "Escala que define el punto de congelación del agua en 0°N y el de ebullición en 33°N."
+    },
+    "delisle": {
+      "name": "Grado Delisle",
+      "description": "Escala inversa donde el agua hierve a 0°De y se congela a 150°De."
+    }
+  }
+}
