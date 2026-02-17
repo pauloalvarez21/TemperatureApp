@@ -87,16 +87,6 @@ const useTemperatureConverter = ({
     }
   }, [fromScale, inputValue, toScale]);
 
-  // Establecer un valor común
-  const setCommonTemperature = (celsiusValue: number, _description: string) => {
-    const valueInFromScale = convertTemperature(
-      celsiusValue,
-      'celsius',
-      fromScale,
-    );
-    setInputValue(valueInFromScale.toString());
-  };
-
   // Resetear
   const reset = () => {
     setInputValue('0');
@@ -120,7 +110,6 @@ const useTemperatureConverter = ({
     setToScale,
 
     // Funciones
-    setCommonTemperature,
     reset,
 
     // Utilidades

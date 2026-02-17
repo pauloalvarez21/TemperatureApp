@@ -19,13 +19,12 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { t } from '../i18n';
 
-import { ExplanationScreenProps } from '../types/navigation.types';
 import Card from '../components/Card';
 import {
   loadTemperatureScalesData,
   convertToAllScales,
 } from '../utils/dataLoader';
-import { TemperatureScaleData } from '../types/temperatureScales';
+import { TemperatureScaleData, AppData } from '../types/temperatureScales';
 
 import {
   BannerAd,
@@ -56,7 +55,7 @@ const { width } = Dimensions.get('window');
 const ExplanationScreen = () => {
   const [showFullTable, setShowFullTable] = useState(false);
 
-  const data = loadTemperatureScalesData();
+  const data = loadTemperatureScalesData() as AppData;
   const {
     temperatureScales,
     commonTemperatures,

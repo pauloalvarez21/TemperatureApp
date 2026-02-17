@@ -34,17 +34,3 @@ export const convertToAllScales = (celsius: number): Record<string, string> => {
     delisle: `${((100 - celsius) * 1.5).toFixed(1)} °De`,
   };
 };
-
-// Función para obtener escala por ID
-export const getScaleById = (id: number) => {
-  const data = loadTemperatureScalesData();
-  return data.temperatureScales?.find((scale: any) => scale.id === id);
-};
-
-// Función para obtener escala por nombre
-export const getScaleByName = (name: string) => {
-  const data = loadTemperatureScalesData();
-  return data.temperatureScales?.find((scale: any) =>
-    scale.name.toLowerCase().includes(name.toLowerCase())
-  );
-};

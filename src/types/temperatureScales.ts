@@ -11,11 +11,6 @@ export interface TemperatureScaleData {
   usage: string;
 }
 
-export interface HistoricalEvent {
-  year: string;
-  event: string;
-}
-
 export interface CommonTemperature {
   name: string;
   celsius: number;
@@ -38,9 +33,8 @@ export interface FinalNote {
   text: string;
 }
 
-export interface TemperatureScalesData {
+export interface AppData {
   temperatureScales: TemperatureScaleData[];
-  historicalEvents: HistoricalEvent[];
   commonTemperatures: CommonTemperature[];
   curiosities: Curiosity[];
   introText: IntroText;
