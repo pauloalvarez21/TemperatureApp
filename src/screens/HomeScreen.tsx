@@ -58,6 +58,7 @@ const HomeScreen = ({ navigation }: HomeScreenProps) => {
   const featuresScrollRef = useRef<ScrollView>(null);
   const [activeFeatureIndex, setActiveFeatureIndex] = useState(0);
   const bannerRef = useRef<BannerAd>(null);
+  const currentYear = new Date().getFullYear();
 
   useForeground(() => {
     if (Platform.OS === 'ios') {
@@ -330,7 +331,7 @@ const HomeScreen = ({ navigation }: HomeScreenProps) => {
 
         {/* Footer */}
         <View style={styles.footer}>
-          <Text style={styles.footerText}>{t('homeScreen.footer.rights')}</Text>
+          <Text style={styles.footerText}>{t('homeScreen.footer.rights', { year: currentYear })}</Text>
           <Text style={styles.footerSubtext}>{t('homeScreen.footer.tool')}</Text>
           <Text style={styles.footerVersion}>v1.0.0</Text>
           <Image

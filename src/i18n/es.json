@@ -290,7 +290,7 @@
       "button": "Comenzar a Convertir →"
     },
     "footer": {
-      "rights": "© 2026 Gaelectronica - Todos los derechos reservados",
+      "rights": "© 2024 - {{year}} Gaelectronica - Todos los derechos reservados",
       "tool": "Herramienta para conversión de temperatura"
     }
   },

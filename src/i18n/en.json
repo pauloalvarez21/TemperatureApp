@@ -295,7 +295,7 @@
     },
 
     "footer": {
-      "rights": "© 2026 Gaelectronica - All rights reserved",
+      "rights": "© 2024 - {{year}} Gaelectronica - All rights reserved",
       "tool": "Temperature conversion tool"
     }
   },

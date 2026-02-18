@@ -66,6 +66,7 @@ const ConvertionScreen = () => {
   } = useTemperatureConverter();
 
   const [decimals, setDecimals] = useState<number>(2);
+  const currentYear = new Date().getFullYear();
 
   /**
    * Renderiza el componente de selección de escala (Tarjeta con Picker).
@@ -275,7 +276,7 @@ const ConvertionScreen = () => {
 
           {/* Footer */}
           <View style={styles.footer}>
-            <Text style={styles.footerText}>{t('homeScreen.footer.rights')}</Text>
+            <Text style={styles.footerText}>{t('homeScreen.footer.rights', { year: currentYear })}</Text>
             <Text style={styles.footerSubtext}>{t('homeScreen.footer.tool')}</Text>
             <Text style={styles.footerVersion}>v1.0.0</Text>
             <Image
