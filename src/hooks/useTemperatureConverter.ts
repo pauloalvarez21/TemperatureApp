@@ -81,8 +81,13 @@ const useTemperatureConverter = ({
     if (inputValue && inputValue !== '' && inputValue !== '-') {
       const numValue = Number.parseFloat(inputValue);
       if (!Number.isNaN(numValue)) {
-        const result = convertTemperature(numValue, fromScale, toScale);
-        setConvertedValue(result);
+        try {
+          const result = convertTemperature(numValue, fromScale, toScale);
+          setConvertedValue(result);
+        } catch (err) {
+          setError(t('errors.conversionError') + err);
+          setConvertedValue(0);
+        }
       }
     }
   }, [fromScale, inputValue, toScale]);

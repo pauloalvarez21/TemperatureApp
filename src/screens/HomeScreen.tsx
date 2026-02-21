@@ -226,6 +226,7 @@ const HomeScreen = ({ navigation }: HomeScreenProps) => {
 
           <ScrollView
             ref={featuresScrollRef}
+            testID="features-carousel"
             horizontal
             pagingEnabled
             showsHorizontalScrollIndicator={false}
@@ -274,6 +275,7 @@ const HomeScreen = ({ navigation }: HomeScreenProps) => {
             {features.map((_, index) => (
               <TouchableOpacity
                 key={index}
+                testID={`pagination-dot-${index}`}
                 style={[
                   styles.paginationDot,
                   activeFeatureIndex === index
@@ -322,7 +324,7 @@ const HomeScreen = ({ navigation }: HomeScreenProps) => {
           <Text style={styles.ctaDescription}>{t('homeScreen.cta.description')}</Text>
           <TouchableOpacity
             style={styles.ctaButton}
-            onPress={() => navigation.navigate('Convertion')}
+            onPress={() => navigation.navigate('Conversion')}
             activeOpacity={0.7}
           >
             <Text style={styles.ctaButtonText}>{t('homeScreen.cta.button')}</Text>
